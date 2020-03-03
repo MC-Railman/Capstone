@@ -36,8 +36,8 @@
         tools:layout="@layout/fragment_breakfast" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.capstone.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_lunch"
+        android:name="com.example.capstone.ui.lunch.LunchFragment"
+        android:label="@string/menu_lunch"
+        tools:layout="@layout/fragment_lunch" />
 </navigation>
