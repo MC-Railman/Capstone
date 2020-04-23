@@ -1,4 +1,4 @@
-package com.example.capstone.ui.breakfast;
+package com.example.capstone.ui.dinner;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.capstone.R;
 
-public class BreakfastFragment extends Fragment {
+public class DinnerFragment extends Fragment {
 
-    private com.example.capstone.ui.breakfast.BreakfastViewModel breakfastViewModel;
+    private DinnerViewModel dinnerViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        breakfastViewModel =
-                ViewModelProviders.of(this).get(com.example.capstone.ui.breakfast.BreakfastViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_breakfast, container, false);
-        final TextView textView = root.findViewById(R.id.text_breakfast);
-        breakfastViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        dinnerViewModel =
+                ViewModelProviders.of(this).get(DinnerViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_dinner, container, false);
+        final TextView textView = root.findViewById(R.id.text_dinner);
+        dinnerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

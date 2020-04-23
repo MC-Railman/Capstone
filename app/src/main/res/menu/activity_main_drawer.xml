@@ -16,5 +16,9 @@
             android:id="@+id/nav_lunch"
             android:icon="@drawable/ic_menu_lunch"
             android:title="@string/menu_lunch" />
+        <item
+            android:id="@+id/nav_dinner"
+            android:icon="@drawable/ic_menu_dinner"
+            android:title="@string/menu_dinner" />
     </group>
 </menu>

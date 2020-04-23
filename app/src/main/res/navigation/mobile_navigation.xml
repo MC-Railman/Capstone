@@ -15,19 +15,6 @@
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
     </fragment>
-    <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.example.capstone.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
-        <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
-    </fragment>
 
     <fragment
         android:id="@+id/nav_breakfast"
@@ -40,4 +27,10 @@
         android:name="com.example.capstone.ui.lunch.LunchFragment"
         android:label="@string/menu_lunch"
         tools:layout="@layout/fragment_lunch" />
+
+    <fragment
+        android:id="@+id/nav_dinner"
+        android:name="com.example.capstone.ui.dinner.DinnerFragment"
+        android:label="@string/menu_dinner"
+        tools:layout="@layout/fragment_dinner" />
 </navigation>
